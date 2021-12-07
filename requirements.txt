@@ -1,0 +1,4 @@
+Flask==2.0.2
+SpeechRecognition==3.8.1
+gunicorn==20.1.0
+Flask-Cors==3.0.10
