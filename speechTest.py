@@ -28,7 +28,7 @@ def speechToText(audio, languageCode="en-MX"):
         return res
     except sr.UnknownValueError:
         res = {
-            "fail": False,
+            "fail": True,
             "text": "Speech Recognition could not understand audio"
         }
 
@@ -39,7 +39,7 @@ def speechToText(audio, languageCode="en-MX"):
             "Could not request results from Google Speech Recognition service; {0}".format(e))
 
         res = {
-            "fail": False,
+            "fail": True,
             "text": "Speech Recognition failed to connect to service"
         }
 
@@ -47,7 +47,7 @@ def speechToText(audio, languageCode="en-MX"):
 
     except Exception as e:
         res = {
-            "fail": False,
+            "fail": True,
             "text": "Error al momento de procesar tu audio, verifica el formato del audio e intentalo mas tarde"
         }
 
