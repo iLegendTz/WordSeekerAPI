@@ -2,10 +2,8 @@ import speech_recognition as sr
 import json
 
 
-def speechToText(audio, languageCode="en-MX"):
+def speechToText(audio, languageCode="es-MX"):
     # obtain path to "english.wav" in the same folder as this script
-    from os import path
-    # AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "audio.wav")
 
     try:
         AUDIO_FILE = audio
